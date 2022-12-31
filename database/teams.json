@@ -1,0 +1,11 @@
+{
+    "teams": [
+        {
+            "id": 1,
+            "name": "Universal Bounce",
+            "description": "",
+            "created-by": "Zonic",
+            "founded-in": "2023"
+        }
+    ]
+}

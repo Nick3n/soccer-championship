@@ -1,0 +1,141 @@
+{
+    "season": {
+        "name": "Primeira Temporada",
+        "start": "00/00/2023",
+        "end": "00/00/2023",
+        "participant-teams": [],
+        "players": [
+            {
+                "id": 1,
+                "name": "kalýteros",
+                "captain": true,
+                "discord": "Kalýteros#7564"
+            },
+            {
+                "id": 2,
+                "name": "relampago",
+                "captain": true
+            },
+            {
+                "id": 3,
+                "name": "beckenbola",
+                "captain": true,
+                "discord": "becken#1582"
+            },
+            {
+                "id": 4,
+                "name": "mozart",
+                "captain": false,
+                "discord": "ritedz#9880"
+            },
+            {
+                "id": 5,
+                "name": "Hey | O Retorno",
+                "captain": false,
+                "discord": "Igor F#3116"
+            },
+            {
+                "id": 6,
+                "name": "Diego Costa#19",
+                "captain": false,
+                "discord": "matheus07#7219"
+            },
+            {
+                "id": 7,
+                "name": "dourado",
+                "captain": false,
+                "discord": "dourado#4823"
+            },
+            {
+                "id": 8,
+                "name": "gutze",
+                "captain": false,
+                "discord": "gutze\")#2974"
+            },
+            {
+                "id": 9,
+                "name": "Ale™ 8",
+                "captain": false,
+                "discord": "Ale™ 8#9468"
+            },
+            {
+                "id": 10,
+                "name": "avarenga",
+                "captain": true,
+                "discord": "z'AvaRenga_#3296"
+            },
+            {
+                "id": 11,
+                "name": "Kamikaze",
+                "captain": false,
+                "discord": "diogorf9#5042"
+            },
+            {
+                "id": 12,
+                "name": "gerd müller",
+                "captain": false,
+                "discord": "rijkaard#5549"
+            },
+            {
+                "id": 13,
+                "name": "Cup",
+                "captain": false,
+                "discord": "Cup#0705"
+            },
+            {
+                "id": 14,
+                "name": "kosko",
+                "captain": false,
+                "discord": "kosko#6626"
+            },
+            {
+                "id": 15,
+                "name": "jv",
+                "captain": false,
+                "discord": "JV#5322"
+            },
+            {
+                "id": 16,
+                "name": "Tsu",
+                "captain": false,
+                "discord": "arthrz#6754"
+            }
+        ],
+        "rounds": [
+            {
+                "round": "Round 1",
+                "date": "00/00/2023",
+                "matches": [
+                    {
+                        "team-1": {
+                            "id": 1,
+                            "goals": 10
+                        },
+                        "team-2": {
+                            "id": 2,
+                            "goals": 20
+                        },
+                        "rec-url": "http::rec",
+                        "goals": [
+                            {
+                                "player-id": 1,
+                                "gols-num": 10,
+                                "against": 0
+                            }
+                        ]
+                    }
+                ],
+                "table": [
+                    {
+                        "team-id": 1,
+                        "wins": 1,
+                        "ties": 0,
+                        "defeats": 0,
+                        "score": 10,
+                        "condeded": 0
+                    }
+                ]
+            }
+        ]
+    }
+}
