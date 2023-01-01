@@ -1,6 +1,6 @@
 export default class Storage {
-    static saveFile(filename) {
-        fetch(`../database/${filename}.json`)
+    async saveFile(filename) {
+        await fetch(`../database/${filename}.json`)
         .then((response) => response.json())
         .then((json) => {
             const season = json.season;
