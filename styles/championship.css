@@ -208,6 +208,7 @@ main .rounds .round .match .result .team {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 150px;
 }
 
 main .rounds .round .match .result .team:nth-child(3) {
@@ -219,7 +220,7 @@ main .rounds .round .match .result .team h5 {
 }
 
 main .rounds .round .match .result .versus {
-    font-size: 2.5em;
+    font-size: 2em;
     width: 120px;
     text-align: center;
     color: #3b3b3b;

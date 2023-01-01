@@ -4,6 +4,7 @@ import Storage from './storage.js';
 (async () => {
     const storage = new Storage();
     await storage.saveFile("season1");
+    await storage.saveFile("teams");
     
     class ChampionshipsPage {
         showSeasons() {

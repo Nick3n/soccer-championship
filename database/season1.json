@@ -127,20 +127,44 @@
         ],
         "rounds": [
             {
-                "round": "Round 1",
+                "round_num": 1,
                 "date": "00/00/2023",
                 "matches": [
                     {
                         "team_1": {
                             "id": 1,
-                            "goals": 10
+                            "score": 10
                         },
                         "team_2": {
                             "id": 2,
-                            "goals": 20
+                            "score": 20
                         },
                         "rec_url": "http::rec",
-                        "goals": [
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "round_num": 2,
+                "date": "00/00/2023",
+                "matches": [
+                    {
+                        "team_1": {
+                            "id": 2,
+                            "score": 15
+                        },
+                        "team_2": {
+                            "id": 1,
+                            "score": 10
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
                             {
                                 "player_id": 1,
                                 "gols_num": 10,

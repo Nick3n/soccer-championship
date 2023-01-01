@@ -2,10 +2,19 @@
     "teams": [
         {
             "id": 1,
-            "name": "Universal Bounce",
+            "name": "Brasil",
             "description": "",
-            "created-by": "Zonic",
-            "founded-in": "2023"
+            "created-by": "_",
+            "founded-in": "2023",
+            "logo": "brasil.png"
+        },
+        {
+            "id": 2,
+            "name": "Espanha",
+            "description": "",
+            "created-by": "_",
+            "founded-in": "2023",
+            "logo": "espanha.png"
         }
     ]
 }

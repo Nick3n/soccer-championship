@@ -3,8 +3,11 @@ export default class Storage {
         await fetch(`../database/${filename}.json`)
         .then((response) => response.json())
         .then((json) => {
-            const season = json.season;
-            localStorage.setItem(season.id, JSON.stringify(json.season));
+            if(json.season != undefined) {
+                localStorage.setItem(json.season.id, JSON.stringify(json.season));
+            } else {
+                localStorage.setItem(filename, JSON.stringify(json.teams));
+            }
         });
     }
 
