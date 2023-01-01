@@ -10,7 +10,6 @@ export default class Season {
 
     constructor(seasonId) {
         const season = Storage.get(seasonId);
-        console.log(season);
         this.id = season.id;
         this.name = season.name;
         this.start = season.start;

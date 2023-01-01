@@ -1,7 +1,7 @@
 import Season from './season.js';
 import Storage from './storage.js';
 
-async () => {
+(async () => {
     const storage = new Storage();
     await storage.saveFile("season1");
     
@@ -51,5 +51,4 @@ async () => {
     
     const page = new ChampionshipsPage();
     page.showSeasons();
-}
-
+})()
