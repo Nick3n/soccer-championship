@@ -41,3 +41,7 @@ class Ranking {
 class Table {
 
 }
+
+/**
+ * Aproveitamento =  ((Partidas Jogadas * 10) - ((Saldo de Gols + (Assistencias/2) - Gol Contra)) * 10
+ */

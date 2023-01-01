@@ -1,0 +1,107 @@
+@import url('./reset.css');
+@import url('./menu.css');
+
+#player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#player main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#player main header {
+    width: 100%;
+    padding: 30px;
+    background-color: #4d4d4d;
+}
+
+#player main header h2 {
+    color: #FFF;
+    font-size: 2em;
+    padding: 10px;
+}
+
+#player main header .label {
+    margin-bottom: 40px;
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#player main header .label span {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.8em;
+    color: #f7f7f7;    
+}
+
+#player main header .label h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+#player main header .label h4 {
+    font-size: 0.9em;
+    color: #0c0c0c;
+    background-color: #FFF;
+    padding: 10px 30px;
+    border-radius: 8px;
+    width: fit-content;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#player main header .label h5 {
+    font-size: 1.5em;
+    color: #0c0c0c;
+    background-color: #FFF;
+    padding: 10px 30px;
+    border-radius: 8px;
+    width: fit-content;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#player main .info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    height: 100%;
+}
+
+#player main .info .awards-div {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+#player main .info .awards {
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#player main .info .awards h4 {
+    width: 130px;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    padding: 20px 10px;
+}
