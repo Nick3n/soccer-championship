@@ -1,2 +1,138 @@
 @import url('./reset.css');
 @import url('./menu.css');
+
+#players {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+#players .ranking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+#players .ranking h3 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    color: #4d4d4d;
+}
+
+#players .ranking table {
+	border-collapse: collapse;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#players .ranking table th, td {
+    padding: 20px;
+}
+
+
+th{
+	background-color: #dfdfdf;
+	color: #4d4d4d;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.wpos{
+	text-align: center;
+}
+
+.wpos td{
+	color: #4d4d4d;
+    font-size: 1.2em;
+}
+
+.wpos:hover{
+	background-color: #dfdfdf;
+    cursor: pointer;
+}
+
+.wpos:hover td{
+	color: #000000;
+}
+
+.pos:hover{
+	background-color: #ff7b21;
+}
+
+.pos:hover td{
+	color: #000000;
+}
+
+
+#players .grid {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+#players .grid h3 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    color: #4d4d4d;
+
+}
+
+#players .grid .player {
+    background-color: #FFF;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 25px 0;
+}
+
+#players .grid .player .label {
+    margin-bottom: 40px;
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#players .grid .player .label span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8em;
+    color: #636363;    
+}
+
+#players .grid .player .label h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #4d4d4d;
+}
+
+#players .grid .player a {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #FFF;
+    background-color: #4d4d4d;
+    padding: 10px 30px;
+    border-radius: 8px;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-self: center;
+}
