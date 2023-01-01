@@ -8,7 +8,7 @@
             {
                 "id": 1,
                 "name": "kalýteros",
-                "captain": true,
+                "captain": false,
                 "discord": "Kalýteros#7564",
                 "uuid": "05344a2c-896e-11ed-a1eb-0242ac120002"
             },
@@ -28,7 +28,7 @@
             {
                 "id": 4,
                 "name": "mozart",
-                "captain": false,
+                "captain": true,
                 "discord": "ritedz#9880",
                 "uuid": "155ef078-896e-11ed-a1eb-0242ac120002"
             },
@@ -117,7 +117,8 @@
                 "uuid": "4d1d92ee-896e-11ed-a1eb-0242ac120002"
             },
             {
-                "id": "L9",
+                "id": 17,
+                "name": "L9",
                 "captain": false,
                 "discord": "friend#9187",
                 "uuid": "51412a84-896e-11ed-a1eb-0242ac120002"
