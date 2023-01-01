@@ -1,0 +1,77 @@
+@import url('./reset.css');
+@import url('./menu.css');
+
+#championships {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2 {
+    margin: 20px;
+    margin-bottom: 50px;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: #5e5e5e;
+}
+
+main .championship {
+    background-color: #FFF;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main .championship .label {
+    margin-bottom: 20px;
+}
+
+main .championship span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8em;
+    color: #636363;
+}
+
+main .championship h3 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    color: #4d4d4d;
+}
+
+main .championship .date h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #FFF;
+    background-color: #4d4d4d;
+    padding: 10px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+main .championship .visit {
+    background-color: #4d4d4d;
+    padding: 15px 20px;
+    width: fit-content;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-radius: 6px;
+    align-self: flex-end;
+}

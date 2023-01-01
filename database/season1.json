@@ -9,101 +9,118 @@
                 "id": 1,
                 "name": "kalýteros",
                 "captain": true,
-                "discord": "Kalýteros#7564"
+                "discord": "Kalýteros#7564",
+                "uuid": "05344a2c-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 2,
                 "name": "relampago",
-                "captain": true
+                "captain": true,
+                "uuid": "0d2ef858-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 3,
                 "name": "beckenbola",
                 "captain": true,
-                "discord": "becken#1582"
+                "discord": "becken#1582",
+                "uuid": "10b6b9b6-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 4,
                 "name": "mozart",
                 "captain": false,
-                "discord": "ritedz#9880"
+                "discord": "ritedz#9880",
+                "uuid": "155ef078-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 5,
                 "name": "Hey | O Retorno",
                 "captain": false,
-                "discord": "Igor F#3116"
+                "discord": "Igor F#3116",
+                "uuid": "19423100-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 6,
                 "name": "Diego Costa#19",
                 "captain": false,
-                "discord": "matheus07#7219"
+                "discord": "matheus07#7219",
+                "uuid": "1f76176c-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 7,
                 "name": "dourado",
                 "captain": false,
-                "discord": "dourado#4823"
+                "discord": "dourado#4823",
+                "uuid": "2361d3e8-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 8,
                 "name": "gutze",
                 "captain": false,
-                "discord": "gutze\")#2974"
+                "discord": "gutze\")#2974",
+                "uuid": "2af385ca-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 9,
                 "name": "Ale™ 8",
                 "captain": false,
-                "discord": "Ale™ 8#9468"
+                "discord": "Ale™ 8#9468",
+                "uuid": "2ee88720-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 10,
                 "name": "avarenga",
                 "captain": true,
-                "discord": "z'AvaRenga_#3296"
+                "discord": "z'AvaRenga_#3296",
+                "uuid": "32cf15f2-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 11,
                 "name": "Kamikaze",
                 "captain": false,
-                "discord": "diogorf9#5042"
+                "discord": "diogorf9#5042",
+                "uuid": "3872c206-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 12,
                 "name": "gerd müller",
                 "captain": false,
-                "discord": "rijkaard#5549"
+                "discord": "rijkaard#5549",
+                "uuid": "3c3daae0-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 13,
                 "name": "Cup",
                 "captain": false,
-                "discord": "Cup#0705"
+                "discord": "Cup#0705",
+                "uuid": "3fe98d44-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 14,
                 "name": "kosko",
                 "captain": false,
-                "discord": "kosko#6626"
+                "discord": "kosko#6626",
+                "uuid": "439776cc-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 15,
                 "name": "jv",
                 "captain": false,
-                "discord": "JV#5322"
+                "discord": "JV#5322",
+                "uuid": "47f2ace6-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 16,
                 "name": "Tsu",
                 "captain": false,
-                "discord": "arthrz#6754"
+                "discord": "arthrz#6754",
+                "uuid": "4d1d92ee-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": "L9",
                 "captain": false,
-                "discord": "friend#9187"
+                "discord": "friend#9187",
+                "uuid": "51412a84-896e-11ed-a1eb-0242ac120002"
             }
         ],
         "rounds": [
@@ -128,16 +145,6 @@
                                 "against": 0
                             }
                         ]
-                    }
-                ],
-                "table": [
-                    {
-                        "team-id": 1,
-                        "wins": 1,
-                        "ties": 0,
-                        "defeats": 0,
-                        "score": 10,
-                        "condeded": 0
                     }
                 ]
             }
