@@ -1,6 +1,7 @@
 import Season from './season.js';
 import Storage from './storage.js';
 import Rounds from './rounds.js';
+import Table from './table.js';
 
 (async () => {
     const storage = new Storage();
@@ -8,25 +9,24 @@ import Rounds from './rounds.js';
     await storage.saveFile("teams");
     
     class ChampionshipPage {
-        matches = [];
-
         constructor() {
             const championshipId = Storage.get("championship-id");
             const season = new Season(championshipId);
             let rounds = new Rounds(championshipId);
             rounds = rounds.rounds;
 
-            const info = this.showInfo(season);
+            const info = this.showInfo(season, rounds);
             const main = document.getElementsByTagName('main')[0];
             main.innerHTML = info + main.innerHTML;
 
-            const roundsPage = this.showRounds(rounds);
-            main.innerHTML = main.innerHTML += roundsPage;
+            const table = this.showTable(rounds);
+            main.innerHTML += table;
 
-            const table = this.showTable();
+            const roundsPage = this.showRounds(rounds);
+            main.innerHTML += roundsPage;
         }
 
-        showInfo(season) {
+        showInfo(season, rounds) {
             return `<h2>${season.name}</h2>
             <div class="info">
                 <div class="label">
@@ -35,7 +35,7 @@ import Rounds from './rounds.js';
                 </div>
                 <div class="label">
                     <span>Rodadas Jogadas</span>
-                    <h3>8 Rodadas</h3>
+                    <h3>${rounds.length} Rodadas</h3>
                 </div>
                 <div class="label date">
                     <span>Data de Início</span>
@@ -57,7 +57,6 @@ import Rounds from './rounds.js';
                 let roundHtml = `<div class="round"><h4>Rodada ${round.round}</h4>`;
                 let matchesHtml = '';
                 round.matches.forEach(match => {
-                    this.matches.push(match);
 
                     let matchHtml = '';
                     matchHtml += `<div class="match">
@@ -83,12 +82,44 @@ import Rounds from './rounds.js';
             return roundsHtml;
         }
 
-        showTable() {
-            const table = new Table();
+        showTable(rounds) {
+            const table = new Table(rounds);
+            const teams = table.makeRanking();
+            console.log(teams);
+            let tableHtml = `<div class="table">
+            <h3>Tabela do Campeonato</h3>
+            <table>
+                <tr class="col">
+                    <th>Pos</th>
+                    <th>Time</th>
+                    <th>J</th>
+                    <th>V</th>
+                    <th>E</th>
+                    <th>D</th>
+                    <th>G</th>
+                    <th>GC</th>
+                    <th>SG</th>
+                </tr>`;
+            teams.forEach((team, index) => {
+                tableHtml += `<tr class="wpos">
+                <td>${index + 1}</td>
+                <td>${team.name}</td>
+                <td>${team.matches}</td>
+                <td>${team.victory}</td>
+                <td>${team.draw}</td>
+                <td>${team.defeat}</td>
+                <td>${team.score}</td>
+                <td>${team.against}</td>
+                <td>${team.goalDiff}</td>
+                </tr>`
+            })
+            tableHtml += `</tr></table></div>`;
+
+            return tableHtml;
         }   
     }
 
-    new ChampionshipPage();
+    await new ChampionshipPage();
 })()
 
 class Player {
