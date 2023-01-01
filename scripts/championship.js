@@ -1,14 +1,3 @@
-class Championship {
-
-}
-
-class Season {
-    name;
-    start;
-    end;
-    participant_teams;
-}
-
 class Team {
     id;
     name;

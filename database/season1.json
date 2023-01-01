@@ -1,9 +1,10 @@
 {
     "season": {
+        "id": 1,
         "name": "Primeira Temporada",
         "start": "00/00/2023",
-        "end": "00/00/2023",
-        "participant-teams": [],
+        "end": "Em Andamento",
+        "participant_teams": [1,2,3],
         "players": [
             {
                 "id": 1,
@@ -130,19 +131,19 @@
                 "date": "00/00/2023",
                 "matches": [
                     {
-                        "team-1": {
+                        "team_1": {
                             "id": 1,
                             "goals": 10
                         },
-                        "team-2": {
+                        "team_2": {
                             "id": 2,
                             "goals": 20
                         },
-                        "rec-url": "http::rec",
+                        "rec_url": "http::rec",
                         "goals": [
                             {
-                                "player-id": 1,
-                                "gols-num": 10,
+                                "player_id": 1,
+                                "gols_num": 10,
                                 "against": 0
                             }
                         ]
