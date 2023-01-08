@@ -19,6 +19,7 @@ export default class Storage {
     }
 
     static get(item) {
+        if (item == "championship-id" && !localStorage.getItem(item)) location.href = "https://cb3d.perejon.com.br/pages/championships.html"
         if (!localStorage.getItem(item)) throw new Error (`Item '${item}' inexistente no Storage`);
         const season = localStorage.getItem(item);
         return JSON.parse(season);
