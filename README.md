@@ -81,8 +81,11 @@ season-[number].json
 ### Eliminatórias
 season-[number].json
 
+- A implementação de rodadas não é obrigatória.
+
 ```json
-{    
+{   
+    "hasRounds": false,
     "hasQualifiers": true,
     "qualifiers": [
         {
