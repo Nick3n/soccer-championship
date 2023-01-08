@@ -2,9 +2,9 @@
     "season": {
         "id": 1,
         "name": "Primeira Temporada",
-        "start": "00/00/2023",
+        "start": "10/01/2023",
         "end": "Em Andamento",
-        "participant_teams": [1,2,3],
+        "participant_teams": [1,2,3,4,5,6,7,8],
         "players": [
             {
                 "id": 1,
@@ -50,14 +50,14 @@
             {
                 "id": 7,
                 "name": "dourado",
-                "captain": false,
+                "captain": true,
                 "discord": "dourado#4823",
                 "uuid": "2361d3e8-896e-11ed-a1eb-0242ac120002"
             },
             {
                 "id": 8,
                 "name": "gutze",
-                "captain": false,
+                "captain": true,
                 "discord": "gutze\")#2974",
                 "uuid": "2af385ca-896e-11ed-a1eb-0242ac120002"
             },
@@ -71,7 +71,7 @@
             {
                 "id": 10,
                 "name": "avarenga",
-                "captain": true,
+                "captain": false,
                 "discord": "z'AvaRenga_#3296",
                 "uuid": "32cf15f2-896e-11ed-a1eb-0242ac120002"
             },
@@ -123,6 +123,21 @@
                 "captain": false,
                 "discord": "friend#9187",
                 "uuid": "51412a84-896e-11ed-a1eb-0242ac120002"
+            },
+            {
+                "id": 18,
+                "name": "naoki",
+                "captain": false,
+                "discord": "Naoki#4615",
+                "uuid": ""
+
+            },
+            {
+                "id": 19,
+                "name": "b22",
+                "captain": false,
+                "discord": "vitss#5428",
+                "uuid": ""
             }
         ],
         "rounds": [
@@ -133,11 +148,65 @@
                     {
                         "team_1": {
                             "id": 1,
-                            "score": 10
+                            "score": -1
                         },
                         "team_2": {
+                            "id": 8,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
                             "id": 2,
-                            "score": 20
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 7,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 3,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 6,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 4,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 5,
+                            "score": -1
                         },
                         "rec_url": "http::rec",
                         "score": [
@@ -156,12 +225,456 @@
                 "matches": [
                     {
                         "team_1": {
-                            "id": 2,
-                            "score": 15
+                            "id": 1,
+                            "score": -1
                         },
                         "team_2": {
+                            "id": 7,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 8,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 6,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 2,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 5,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 3,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 4,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "round_num": 3,
+                "date": "00/00/2023",
+                "matches": [
+                    {
+                        "team_1": {
                             "id": 1,
-                            "score": 10
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 6,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 7,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 6,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 8,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 4,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 2,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 3,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "round_num": 4,
+                "date": "00/00/2023",
+                "matches": [
+                    {
+                        "team_1": {
+                            "id": 1,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 5,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 6,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 4,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 7,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 3,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 8,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 2,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "round_num": 5,
+                "date": "00/00/2023",
+                "matches": [
+                    {
+                        "team_1": {
+                            "id": 1,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 4,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 5,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 3,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 6,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 2,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 7,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 8,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "round_num": 6,
+                "date": "00/00/2023",
+                "matches": [
+                    {
+                        "team_1": {
+                            "id": 1,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 3,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 4,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 2,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 5,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 8,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 6,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 7,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "round_num": 7,
+                "date": "00/00/2023",
+                "matches": [
+                    {
+                        "team_1": {
+                            "id": 1,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 2,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 3,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 8,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 4,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 7,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 5,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 6,
+                            "score": -1
                         },
                         "rec_url": "http::rec",
                         "score": [

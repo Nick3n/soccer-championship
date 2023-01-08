@@ -65,7 +65,7 @@ import Table from './table.js';
                                 <img src="../assets/teams/${match.team_1.logo}" >
                                 <h5>${match.team_1.name}</h5>
                             </div>
-                            <span class="versus">${match.team_1.score} x ${match.team_2.score}</span>
+                            <span class="versus">${match.team_1.score == -1 ? "-" : match.team_1.score} x ${match.team_2.score == -1 ? "-" : match.team_2.score}</span>
                             <div class="team">
                                 <h5>${match.team_2.name}</h5>
                                 <img src="../assets/teams/${match.team_2.logo}" >

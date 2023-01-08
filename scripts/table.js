@@ -36,6 +36,7 @@ export default class Table {
     }
 
     updateTeam(index, score, scoreRival) {
+        if (score == -1) return;
         this.teams[index].score += score;
         this.teams[index].matches += 1;
         const goalDiff = score - scoreRival;
@@ -49,32 +50,40 @@ export default class Table {
         } else {
             this.teams[index].defeat += 1;
         }
-
     }
     
     createTeam(teamName, score, scoreRival) {
         let victory = 0;
         let draw = 0;
         let defeat = 0;
-        let matches = 1;
+        let goalDiff = 0;
+        let realScore = 0;
+        let matches = 0;
+        let realScoreRival = 0;
 
-        if(score > scoreRival) {
-            victory += 1;
-        } else if(score == scoreRival) {
-            draw += 1;
-        } else {
-            defeat += 1;
+        if (score != -1) {
+            if(score > scoreRival) {
+                victory += 1;
+            } else if(score == scoreRival) {
+                draw += 1;
+            } else {
+                defeat += 1;
+            }
+            goalDiff = score - scoreRival;
+            realScore = score;
+            matches = 1;
+            realScoreRival = scoreRival;
         }
-        const goalDiff = score - scoreRival;
+
 
         this.teams.push({
             name: teamName,
-            score: score,
+            score: realScore,
             victory: victory,
             defeat: defeat,
             draw: draw,
             matches: matches,
-            against: scoreRival,
+            against: realScoreRival,
             goalDiff
         })
     }
