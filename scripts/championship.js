@@ -62,7 +62,7 @@ import Qualifiers from './qualifiers.js';
                     <h3>${season.players_length}</h3>
                 </div>
                 <div class="label">
-                    <span>Rodadas Jogadas</span>
+                    <span>Rodadas</span>
                     <h3>${totalRounds} Rodadas</h3>
                 </div>
                 <div class="label date">
