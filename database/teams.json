@@ -2,19 +2,19 @@
     "teams": [
         {
             "id": 1,
-            "name": "Brasil",
+            "name": "Portugal",
             "description": "",
             "created-by": "",
-            "founded-in": "2023",
-            "logo": "brasil.png"
+            "founded-in": "",
+            "logo": "portugal.png"
         },
         {
             "id": 2,
-            "name": "Espanha",
+            "name": "Marrocos",
             "description": "",
-            "created-by": "_",
-            "founded-in": "2023",
-            "logo": "espanha.png"
+            "created-by": "",
+            "founded-in": "",
+            "logo": "marrocos.png"
         },
         {
             "id": 3,
@@ -26,27 +26,27 @@
         },
         {
             "id": 4,
-            "name": "Marrocos",
-            "description": "",
-            "created-by": "",
-            "founded-in": "",
-            "logo": "marrocos.png"
-        },
-        {
-            "id": 5,
-            "name": "Portugal",
-            "description": "",
-            "created-by": "",
-            "founded-in": "",
-            "logo": "portugal.png"
-        },
-        {
-            "id": 6,
             "name": "Argentina",
             "description": "",
             "created-by": "",
             "founded-in": "",
             "logo": "argentina.png"
+        },
+        {
+            "id": 5,
+            "name": "Brasil",
+            "description": "",
+            "created-by": "",
+            "founded-in": "2023",
+            "logo": "brasil.png"
+        },
+        {
+            "id": 6,
+            "name": "Espanha",
+            "description": "",
+            "created-by": "_",
+            "founded-in": "2023",
+            "logo": "espanha.png"
         },
         {
             "id": 7,
