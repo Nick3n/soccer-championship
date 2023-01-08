@@ -77,3 +77,37 @@ season-[number].json
     ]
 }
 ```
+
+### Eliminatórias
+season-[number].json
+
+```json
+{    
+    "hasQualifiers": true,
+    "qualifiers": [
+        {
+            "name": "Quartas de Final",
+            "date": "00/00/2023",
+            "matches": [
+                {
+                    "team_1": {
+                        "id": 1,
+                        "score": -1
+                    },
+                    "team_2": {
+                        "id": 8,
+                        "score": -1
+                    },
+                    "rec_url": "http::rec",
+                    "score": [
+                        {
+                            "player_id": 1,
+                            "gols_num": 10,
+                            "against": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
