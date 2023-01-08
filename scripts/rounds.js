@@ -14,7 +14,7 @@ export default class Rounds {
                 const matchObj = new Match(match)
                 matchObjects.push(matchObj.get())
             })
-            let group = round.group ?? "none";
+            let group = round.group ?? "Não Identificado";
             let hasGroups = round.group ? true : false;
             this.rounds.push({
                 round: round.round_num,

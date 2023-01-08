@@ -6,18 +6,17 @@ Idealizado por Nicolas Perejon
 ## 2 Modos de Jogo
 
 ### Fases de Grupo
-```json
-// season-[number].json
+season-[number].json
 
+```json
 {
     "hasGroups": true,
     "groups": ["A", "B", "C"],
-    // ...
     "rounds": [
         {
             "round_num": 1,
             "date": "00/00/2023",
-            "group": "A", // <--
+            "group": "A",
             "matches": [
                 {
                     "team_1": {
@@ -37,19 +36,19 @@ Idealizado por Nicolas Perejon
                         }
                     ]
                 }
+            ]
         }
     ]
 }
 ```
 
 ### Pontos Corridos
-```json
-// season-[number].json
+season-[number].json
 
+```json
 {    
     "hasGroups": false,
     "groups": [],
-    // ...
     "rounds": [
         {
             "round_num": 1,
@@ -73,6 +72,7 @@ Idealizado por Nicolas Perejon
                         }
                     ]
                 }
+            ]
         }
     ]
 }
