@@ -1,7 +1,6 @@
 import Season from './season.js';
 import Storage from './storage.js';
 import Rounds from './rounds.js';
-import Table from './table.js';
 import TableGroup from './tableGroup.js';
 import TableNormal from './tableNormal.js';
 import Qualifiers from './qualifiers.js';
@@ -76,6 +75,7 @@ import Qualifiers from './qualifiers.js';
                 </div>
             </div>
             <a href="players.html" class="players" data-players-championship="${season.id}">Ver Jogadores</a>
+            <a href="teams.html" class="players" data-team-championship="${season.id}">Ver Times</a>
             `
         }
 
@@ -198,16 +198,6 @@ import Qualifiers from './qualifiers.js';
     await new ChampionshipPage();
 })()
 
-class Player {
-    id;
-    name;
-    captain;
-    discord;
-}
-
-class Ranking {
-
-}
 /**
  * Aproveitamento =  ((Partidas Jogadas * 10) - ((Saldo de Gols + (Assistencias/2) - Gol Contra)) * 10
  */

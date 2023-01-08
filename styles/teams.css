@@ -1,0 +1,88 @@
+@import url('./reset.css');
+@import url('./menu.css');
+
+#teams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#teams .grid {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    width: 800px;
+}
+
+#teams .grid h3 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    color: #4d4d4d;
+
+}
+
+#teams .grid .team {
+    background-color: #FFF;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 25px 0;
+    width: 100%;
+    margin-top: 50px;
+    align-items: center;
+    
+}
+
+
+#teams .grid .team img {
+    width: 140px;
+    margin-bottom: 50px;
+    align-self: center;
+}
+
+#teams .grid .team .label {
+    width: 100%;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#teams .grid .team .label span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8em;
+    color: #636363;    
+}
+
+#teams .grid .team .label h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #4d4d4d;
+}
+
+#teams .grid .team a {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #FFF;
+    background-color: #4d4d4d;
+    padding: 10px 30px;
+    border-radius: 8px;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-self: center;
+}

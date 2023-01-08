@@ -79,7 +79,7 @@
                 "captain": false,
                 "discord": "Ale™ 8#9468",
                 "uuid": "2ee88720-896e-11ed-a1eb-0242ac120002",
-                "teamId": 0
+                "teamId": 5
             },
             {
                 "id": 10,
@@ -188,11 +188,27 @@
             },
             {
                 "id": 23,
-                "name": "Skyne",
+                "name": "skineeeeeeeeeeeeeeeeeee",
                 "captain": false,
                 "discord": "White7rlq#4345",
                 "uuid": "9d6fee0e-8f13-11ed-a1eb-0242ac120002",
                 "teamId": 2
+            },
+            {
+                "id": 24,
+                "name": "MJ",
+                "captain": true,
+                "discord": "Al Capone#3871",
+                "uuid": "",
+                "teamId": 3
+            },
+            {
+                "id": 25,
+                "name": "ch",
+                "captain": false,
+                "discord": "zxd#1551",
+                "uuid": "",
+                "teamId": 3
             }
 
         ],
