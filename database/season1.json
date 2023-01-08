@@ -6,7 +6,7 @@
         "end": "Em Andamento",
         "participant_teams": [1,2,3,4,5,6,7,8],
         "hasGroups": true,
-        "hasQualifiers": true,
+        "hasQualifiers": false,
         "groups": ["A", "B"],
         "players": [
             {
@@ -404,6 +404,49 @@
                 ]
             }
         ],
-        "qualifiers": []
+        "qualifiers": [
+            {
+                "name": "Quartas de Final",
+                "date": "00/00/2023",
+                "matches": [
+                    {
+                        "team_1": {
+                            "id": 1,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 4,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    },
+                    {
+                        "team_1": {
+                            "id": 2,
+                            "score": -1
+                        },
+                        "team_2": {
+                            "id": 3,
+                            "score": -1
+                        },
+                        "rec_url": "http::rec",
+                        "score": [
+                            {
+                                "player_id": 1,
+                                "gols_num": 10,
+                                "against": 0
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
     }
 }

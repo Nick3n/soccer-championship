@@ -4,6 +4,7 @@ import Rounds from './rounds.js';
 import Table from './table.js';
 import TableGroup from './tableGroup.js';
 import TableNormal from './tableNormal.js';
+import Qualifiers from './qualifiers.js';
 
 (async () => {
     const storage = new Storage();
@@ -14,6 +15,7 @@ import TableNormal from './tableNormal.js';
         constructor() {
             const championshipId = Storage.get("championship-id");
             const season = new Season(championshipId);
+
             let rounds = new Rounds(championshipId);
             rounds = rounds.rounds;
 
@@ -21,7 +23,6 @@ import TableNormal from './tableNormal.js';
             const main = document.getElementsByTagName('main')[0];
             main.innerHTML = info + main.innerHTML;
 
-        
             if (season.hasGroups) {
                 season.groups.forEach(group => {
                     let table = this.showTableGroup(rounds, group);
@@ -34,6 +35,14 @@ import TableNormal from './tableNormal.js';
 
 
             const roundsPage = this.showRounds(rounds);
+
+            if (season.hasQualifiers) {
+                let qualifiers = new Qualifiers(championshipId);
+                qualifiers = qualifiers.qualifiers;
+                const qualifiersPage = this.showQualifiers(qualifiers)
+                main.innerHTML += qualifiersPage;
+            }
+
             main.innerHTML += roundsPage;
         }
 
@@ -99,6 +108,39 @@ import TableNormal from './tableNormal.js';
             })
 
             return roundsHtml;
+        }
+
+        showQualifiers(qualifiers) {
+            let qualifiersHtml = '<div class="rounds"><h3>Eliminatórias</h3>';
+
+            qualifiers.forEach(qualifier => {
+                let qualifierHtml = `<div class="round"><h4>${qualifier.name}</h4>`;
+                let matchesHtml = '';
+                qualifier.matches.forEach(match => {
+                    let matchHtml = '';
+                    matchHtml += `<div class="match">
+                        <div class="result">
+                            <div class="team">
+                                <img src="../assets/teams/${match.team_1.logo}" >
+                                <h5>${match.team_1.name}</h5>
+                            </div>
+                            <span class="versus">${match.team_1.score == -1 ? "-" : match.team_1.score} x ${match.team_2.score == -1 ? "-" : match.team_2.score}</span>
+                            <div class="team">
+                                <h5>${match.team_2.name}</h5>
+                                <img src="../assets/teams/${match.team_2.logo}" >
+                            </div>
+                        </div>
+                        <a href="#">Mais Informações</a>
+                    </div>`
+                    matchesHtml += matchHtml;
+                })
+                qualifierHtml += matchesHtml;
+                qualifiersHtml += qualifierHtml + '</div>';
+            })
+
+            console.log(qualifiersHtml);
+
+            return qualifiersHtml;
         }
         
         showTable(rounds) {

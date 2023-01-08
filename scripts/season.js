@@ -18,6 +18,8 @@ export default class Season {
         this.players_length = season.players.length;
         this.groups = season.groups;
         this.hasGroups = season.hasGroups;
+        this.hasQualifiers = season.hasQualifiers;
+        this.qualifiers = season.qualifiers;
     }
 
     get() {
@@ -29,7 +31,9 @@ export default class Season {
             participant_teams: this.participant_teams,
             players_length: this.players_length,
             groups: this.groups,
-            hasGroups: this.hasGroups
+            hasGroups: this.hasGroups,
+            hasQualifiers: this.hasQualifiers,
+            qualifiers: this.qualifiers
         }
     }
 }
