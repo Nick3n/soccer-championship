@@ -38,6 +38,15 @@ import TableNormal from './tableNormal.js';
         }
 
         showInfo(season, rounds) {
+            let totalRounds = 0;
+            if (season.hasGroups) {
+                totalRounds += rounds.length/2;
+            }
+
+            if (season.hasQualifiers) {
+                totalRounds += season.qualifiers.length;
+            }
+
             return `<h2>${season.name}</h2>
             <div class="info">
                 <div class="label">
@@ -46,7 +55,7 @@ import TableNormal from './tableNormal.js';
                 </div>
                 <div class="label">
                     <span>Rodadas Jogadas</span>
-                    <h3>${rounds.length} Rodadas</h3>
+                    <h3>${totalRounds} Rodadas</h3>
                 </div>
                 <div class="label date">
                     <span>Data de Início</span>
