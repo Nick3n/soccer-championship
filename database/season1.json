@@ -7,6 +7,7 @@
         "participant_teams": [1,2,3,4,5,6,7,8],
         "hasGroups": true,
         "hasQualifiers": false,
+        "hasRounds": false,
         "groups": ["A", "B"],
         "players": [
             {

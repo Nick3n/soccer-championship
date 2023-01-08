@@ -20,6 +20,7 @@ export default class Season {
         this.hasGroups = season.hasGroups;
         this.hasQualifiers = season.hasQualifiers;
         this.qualifiers = season.qualifiers;
+        this.hasRounds = season.hasRounds ? season.hasRounds : true
     }
 
     get() {
@@ -33,7 +34,8 @@ export default class Season {
             groups: this.groups,
             hasGroups: this.hasGroups,
             hasQualifiers: this.hasQualifiers,
-            qualifiers: this.qualifiers
+            qualifiers: this.qualifiers,
+            hasRounds: this.hasRounds
         }
     }
 }

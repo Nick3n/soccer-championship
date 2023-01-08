@@ -165,6 +165,7 @@ import Qualifiers from './qualifiers.js';
             <table>
                 <tr class="col">
                     <th>Pos</th>
+                    <th>Logo</th>
                     <th>Time</th>
                     <th>J</th>
                     <th>V</th>
@@ -177,7 +178,8 @@ import Qualifiers from './qualifiers.js';
             teams.forEach((team, index) => {
                 tableHtml += `<tr class="wpos">
                 <td>${index + 1}</td>
-                <td class="name"><img class="table-logo" src="../assets/teams/${team.logo}" /> ${team.name}</td>
+                <td><img class="table-logo" src="../assets/teams/${team.logo}" /></td>
+                <td class="name"> ${team.name}</td>
                 <td>${team.matches}</td>
                 <td>${team.victory}</td>
                 <td>${team.draw}</td>

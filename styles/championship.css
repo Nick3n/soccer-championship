@@ -120,18 +120,10 @@ main .table table th, td {
     padding: 20px;
 }
 
-main .table .table-logo {
-    width: 30px;
-    margin-right: 20px;
+main .table-logo {
+    height: 40px;
 }
 
-
-main .table .name {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    width: 150px;
-}
 
 th{
 	background-color: #dfdfdf;
@@ -146,24 +138,12 @@ th{
 
 .wpos td{
 	color: #4d4d4d;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .wpos:hover{
 	background-color: #dfdfdf;
     cursor: pointer;
-}
-
-.wpos:hover td{
-	color: #000000;
-}
-
-.pos:hover{
-	background-color: #ff7b21;
-}
-
-.pos:hover td{
-	color: #000000;
 }
 
 
