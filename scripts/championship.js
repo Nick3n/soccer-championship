@@ -2,6 +2,8 @@ import Season from './season.js';
 import Storage from './storage.js';
 import Rounds from './rounds.js';
 import Table from './table.js';
+import TableGroup from './tableGroup.js';
+import TableNormal from './tableNormal.js';
 
 (async () => {
     const storage = new Storage();
@@ -19,8 +21,17 @@ import Table from './table.js';
             const main = document.getElementsByTagName('main')[0];
             main.innerHTML = info + main.innerHTML;
 
-            const table = this.showTable(rounds);
-            main.innerHTML += table;
+        
+            if (season.hasGroups) {
+                season.groups.forEach(group => {
+                    let table = this.showTableGroup(rounds, group);
+                    main.innerHTML += table;
+                })
+            } else {
+                let table = this.showTable(rounds);
+                main.innerHTML += table;
+            }
+
 
             const roundsPage = this.showRounds(rounds);
             main.innerHTML += roundsPage;
@@ -54,10 +65,9 @@ import Table from './table.js';
             let roundsHtml = '<div class="rounds"><h3>Rodadas</h3>';
 
             rounds.forEach(round => {
-                let roundHtml = `<div class="round"><h4>Rodada ${round.round}</h4>`;
+                let roundHtml = `<div class="round"><h4>Rodada ${round.round} ${round.hasGroups ? "- Grupo " + round.group : ""}</h4>`;
                 let matchesHtml = '';
                 round.matches.forEach(match => {
-
                     let matchHtml = '';
                     matchHtml += `<div class="match">
                         <div class="result">
@@ -81,13 +91,26 @@ import Table from './table.js';
 
             return roundsHtml;
         }
-
+        
         showTable(rounds) {
-            const table = new Table(rounds);
+            const table = new TableNormal(rounds);
             const teams = table.makeRanking();
-            console.log(teams);
+            let tableHtml = this.makeTableRankingHtml(teams)
+
+            return tableHtml;
+        }
+
+        showTableGroup(rounds, group) {
+            const table = new TableGroup(rounds, group);
+            const teams = table.makeRanking(); // group
+            let tableHtml = this.makeTableRankingHtml(teams, group)
+
+            return tableHtml;
+        }
+        
+        makeTableRankingHtml(teams, group = undefined) {
             let tableHtml = `<div class="table">
-            <h3>Tabela do Campeonato</h3>
+            <h3>Tabela do ${group ? "Grupo " + group : "Campeonato"}</h3>
             <table>
                 <tr class="col">
                     <th>Pos</th>
@@ -103,7 +126,7 @@ import Table from './table.js';
             teams.forEach((team, index) => {
                 tableHtml += `<tr class="wpos">
                 <td>${index + 1}</td>
-                <td>${team.name}</td>
+                <td class="name"><img class="table-logo" src="../assets/teams/${team.logo}" /> ${team.name}</td>
                 <td>${team.matches}</td>
                 <td>${team.victory}</td>
                 <td>${team.draw}</td>
@@ -116,7 +139,7 @@ import Table from './table.js';
             tableHtml += `</tr></table></div>`;
 
             return tableHtml;
-        }   
+        }
     }
 
     await new ChampionshipPage();

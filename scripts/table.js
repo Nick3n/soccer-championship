@@ -2,30 +2,6 @@ export default class Table {
     rounds = [];
     teams = [];
 
-    constructor(rounds) {
-        rounds.forEach(round => {
-            const matches = round.matches;
-            matches.forEach(match => {
-                const team1Index = this.teamIndex(match.team_1.name);
-                if(team1Index == -1) {
-                    this.createTeam(match.team_1.name, match.team_1.score, match.team_2.score)
-                } else {
-                    this.updateTeam(team1Index, match.team_1.score, match.team_2.score);
-                }
-
-                const team2Index = this.teamIndex(match.team_2.name);
-                if(team2Index == -1) {
-                    this.createTeam(match.team_2.name, match.team_2.score, match.team_1.score)
-                } else {
-                    this.updateTeam(team2Index, match.team_2.score, match.team_1.score);
-                }
-            })
-        })
-
-        this.makeRanking();
-
-    }
-
     teamIndex(teamName) {
         let index = -1;
         this.teams.forEach((team, i) => {
@@ -35,7 +11,7 @@ export default class Table {
         return index;
     }
 
-    updateTeam(index, score, scoreRival) {
+    updateTeam(index, logo, score, scoreRival) {
         if (score == -1) return;
         this.teams[index].score += score;
         this.teams[index].matches += 1;
@@ -52,7 +28,7 @@ export default class Table {
         }
     }
     
-    createTeam(teamName, score, scoreRival) {
+    createTeam(teamName, logo, score, scoreRival) {
         let victory = 0;
         let draw = 0;
         let defeat = 0;
@@ -84,7 +60,8 @@ export default class Table {
             draw: draw,
             matches: matches,
             against: realScoreRival,
-            goalDiff
+            goalDiff,
+            logo
         })
     }
 

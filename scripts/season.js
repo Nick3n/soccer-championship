@@ -16,6 +16,8 @@ export default class Season {
         this.end = season.end;
         this.participant_teams = season.participant_teams;
         this.players_length = season.players.length;
+        this.groups = season.groups;
+        this.hasGroups = season.hasGroups;
     }
 
     get() {
@@ -25,7 +27,9 @@ export default class Season {
             start: this.start,
             end: this.end,
             participant_teams: this.participant_teams,
-            players_length: this.players_length
+            players_length: this.players_length,
+            groups: this.groups,
+            hasGroups: this.hasGroups
         }
     }
 }

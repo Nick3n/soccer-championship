@@ -120,6 +120,18 @@ main .table table th, td {
     padding: 20px;
 }
 
+main .table .table-logo {
+    width: 30px;
+    margin-right: 20px;
+}
+
+
+main .table .name {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 150px;
+}
 
 th{
 	background-color: #dfdfdf;

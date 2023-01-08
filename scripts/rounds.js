@@ -14,9 +14,13 @@ export default class Rounds {
                 const matchObj = new Match(match)
                 matchObjects.push(matchObj.get())
             })
+            let group = round.group ?? "none";
+            let hasGroups = round.group ? true : false;
             this.rounds.push({
                 round: round.round_num,
-                matches: matchObjects
+                group: group,
+                matches: matchObjects,
+                hasGroups
             })
         })
     }
