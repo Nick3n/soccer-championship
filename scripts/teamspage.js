@@ -25,8 +25,8 @@ import teamsChampionship from "./teamsChampionship.js";
             <div class="team">
             <div class="label">
                 <img src="../assets/teams/${team.logo}" />
-                <span>${team.name}</span>
-                <h3>Time</h3>
+                <span>Time</span>
+                <h3>${team.name}</h3>
             </div>
             <div class="label">
                 <span>Capitão</span>
