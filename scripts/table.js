@@ -67,7 +67,7 @@ export default class Table {
 
     makeRanking() {
         this.teams.sort((first, second) => {
-            if (second.victores == second.victores) {
+            if (first.victory == second.victory) {
                 if (second.score == first.score) {
                     return second.goalDiff - first.goalDiff;
                 }
@@ -75,7 +75,8 @@ export default class Table {
                 return second.score - first.score;
             }
 
-            return second.victories - first.victories; 
+
+            return second.victory - first.victory; 
         })
 
         return this.teams;
