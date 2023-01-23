@@ -21,8 +21,10 @@ export default class Table {
         
         if(score > scoreRival) {
             this.teams[index].victory += 1;
+            this.teams[index].points+= 3;
         } else if(score == scoreRival) {
             this.teams[index].draw += 1;
+            this.teams[index].points+= 1;
         } else {
             this.teams[index].defeat += 1;
         }
@@ -36,14 +38,18 @@ export default class Table {
         let realScore = 0;
         let matches = 0;
         let realScoreRival = 0;
+        let points = 0;
 
         if (score != -1) {
             if(score > scoreRival) {
                 victory += 1;
+                points = 3;
             } else if(score == scoreRival) {
                 draw += 1;
+                points = 1;
             } else {
                 defeat += 1;
+                points = 0;
             }
             goalDiff = score - scoreRival;
             realScore = score;
@@ -61,7 +67,8 @@ export default class Table {
             matches: matches,
             against: realScoreRival,
             goalDiff,
-            logo
+            logo,
+            points
         })
     }
 

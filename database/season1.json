@@ -258,7 +258,7 @@
             },
             {
                 "round_num": 1,
-                "date": "00/00/2023",
+                "date": "08/00/2023",
                 "group": "B",
                 "matches": [
                     {
@@ -301,17 +301,17 @@
             },
             {
                 "round_num": 2,
-                "date": "00/00/2023",
+                "date": "15/00/2023",
                 "group": "A",
                 "matches": [
                     {
                         "team_1": {
                             "id": 1,
-                            "score": -1
+                            "score": 0
                         },
                         "team_2": {
                             "id": 3,
-                            "score": -1
+                            "score": 0
                         },
                         "rec_url": "http::rec",
                         "score": [
@@ -325,11 +325,11 @@
                     {
                         "team_1": {
                             "id": 4,
-                            "score": -1
+                            "score": 8
                         },
                         "team_2": {
                             "id": 2,
-                            "score": -1
+                            "score": 21
                         },
                         "rec_url": "http::rec",
                         "score": [
@@ -344,17 +344,17 @@
             },
             {
                 "round_num": 2,
-                "date": "00/00/2023",
+                "date": "15/00/2023",
                 "group": "B",
                 "matches": [
                     {
                         "team_1": {
                             "id": 5,
-                            "score": -1
+                            "score": 9
                         },
                         "team_2": {
                             "id": 7,
-                            "score": -1
+                            "score": 14
                         },
                         "rec_url": "http::rec",
                         "score": [
@@ -368,11 +368,11 @@
                     {
                         "team_1": {
                             "id": 8,
-                            "score": -1
+                            "score": 0
                         },
                         "team_2": {
                             "id": 6,
-                            "score": -1
+                            "score": 0
                         },
                         "rec_url": "http::rec",
                         "score": [

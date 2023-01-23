@@ -167,6 +167,7 @@ import Qualifiers from './qualifiers.js';
                     <th>Pos</th>
                     <th>Logo</th>
                     <th>Time</th>
+                    <th>P</th>
                     <th>J</th>
                     <th>V</th>
                     <th>E</th>
@@ -180,6 +181,7 @@ import Qualifiers from './qualifiers.js';
                 <td>${index + 1}</td>
                 <td><img class="table-logo" src="../assets/teams/${team.logo}" /></td>
                 <td class="name"> ${team.name}</td>
+                <td>${team.points}</td>
                 <td>${team.matches}</td>
                 <td>${team.victory}</td>
                 <td>${team.draw}</td>
