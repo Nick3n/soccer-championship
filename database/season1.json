@@ -230,9 +230,28 @@
                         "rec_url": "http::rec",
                         "score": [
                             {
-                                "player_id": 1,
-                                "gols_num": 10,
-                                "against": 0
+                                "player_id": 5,
+                                "goals_num": 10,
+                                "against": 1,
+                                "assists": 2
+                            },
+                            {
+                                "player_id": 7,
+                                "goals_num": 6,
+                                "against": 0,
+                                "assists": 7
+                            },
+                            {
+                                "player_id": 8,
+                                "goals_num": 11,
+                                "against": 0,
+                                "assists": 5
+                            },
+                            {
+                                "player_id": 6,
+                                "goals_num": 6,
+                                "against": 0,
+                                "assists": 10
                             }
                         ]
                     },
@@ -248,9 +267,28 @@
                         "rec_url": "http::rec",
                         "score": [
                             {
-                                "player_id": 1,
-                                "gols_num": 10,
-                                "against": 0
+                                "player_id": 2,
+                                "goals_num": 3,
+                                "against": 1,
+                                "assists": 2
+                            },
+                            {
+                                "player_id": 20,
+                                "goals_num": 11,
+                                "against": 1,
+                                "assists": 2
+                            },
+                            {
+                                "player_id": 24,
+                                "goals_num": 5,
+                                "against": 1,
+                                "assists": 3
+                            },
+                            {
+                                "player_id": 25,
+                                "goals_num": 5,
+                                "against": 0,
+                                "assists": 0
                             }
                         ]
                     }
@@ -272,11 +310,6 @@
                         },
                         "rec_url": "http::rec",
                         "score": [
-                            {
-                                "player_id": 1,
-                                "gols_num": 10,
-                                "against": 0
-                            }
                         ]
                     },
                     {
@@ -291,9 +324,40 @@
                         "rec_url": "http::rec",
                         "score": [
                             {
-                                "player_id": 1,
-                                "gols_num": 10,
-                                "against": 0
+                                "player_id": 15,
+                                "goals_num": 10,
+                                "against": 1,
+                                "assists": 4
+                            },
+                            {
+                                "player_id": 4,
+                                "goals_num": 8,
+                                "against": 0,
+                                "assists": 4
+                            },
+                            {
+                                "player_id": 16,
+                                "goals_num": 4,
+                                "against": 0,
+                                "assists": 2
+                            },
+                            {
+                                "player_id": 11,
+                                "goals_num": 5,
+                                "against": 0,
+                                "assists": 3
+                            },
+                            {
+                                "player_id": 21,
+                                "goals_num": 6,
+                                "against": 1,
+                                "assists": 0
+                            },
+                            {
+                                "player_id": 12,
+                                "goals_num": 1,
+                                "against": 0,
+                                "assists": 3
                             }
                         ]
                     }
@@ -316,9 +380,28 @@
                         "rec_url": "http::rec",
                         "score": [
                             {
-                                "player_id": 1,
-                                "gols_num": 10,
-                                "against": 0
+                                "player_id": 24,
+                                "goals_num": 16,
+                                "against": 0,
+                                "assists": 3
+                            },
+                            {
+                                "player_id": 25,
+                                "goals_num": 6,
+                                "against": 1,
+                                "assists": 8
+                            },
+                            {
+                                "player_id": 7,
+                                "goals_num": 10,
+                                "against": 1,
+                                "assists": 3
+                            },
+                            {
+                                "player_id": 5,
+                                "goals_num": 6,
+                                "against": 0,
+                                "assists": 5
                             }
                         ]
                     },
@@ -334,9 +417,28 @@
                         "rec_url": "http::rec",
                         "score": [
                             {
-                                "player_id": 1,
-                                "gols_num": 10,
-                                "against": 0
+                                "player_id": 2,
+                                "goals_num": 8,
+                                "against": 0,
+                                "assists": 8
+                            },
+                            {
+                                "player_id": 20,
+                                "goals_num": 13,
+                                "against": 0,
+                                "assists": 5
+                            },
+                            {
+                                "player_id": 8,
+                                "goals_num": 6,
+                                "against": 0,
+                                "assists": 0
+                            },
+                            {
+                                "player_id": 6,
+                                "goals_num": 2,
+                                "against": 0,
+                                "assists": 0
                             }
                         ]
                     }
@@ -359,9 +461,28 @@
                         "rec_url": "http::rec",
                         "score": [
                             {
-                                "player_id": 1,
-                                "gols_num": 10,
-                                "against": 0
+                                "player_id": 5,
+                                "goals_num": 7,
+                                "against": 1,
+                                "assists": 2
+                            },
+                            {
+                                "player_id": 4,
+                                "goals_num": 7,
+                                "against": 0,
+                                "assists": 4
+                            },
+                            {
+                                "player_id": 3,
+                                "goals_num": 6,
+                                "against": 0,
+                                "assists": 2
+                            },
+                            {
+                                "player_id": 9,
+                                "goals_num": 3,
+                                "against": 0,
+                                "assists": 1
                             }
                         ]
                     },
@@ -375,13 +496,7 @@
                             "score": 5
                         },
                         "rec_url": "http::rec",
-                        "score": [
-                            {
-                                "player_id": 1,
-                                "gols_num": 10,
-                                "against": 0
-                            }
-                        ]
+                        "score": []
                     }
                 ]
             },
@@ -401,11 +516,6 @@
                         },
                         "rec_url": "http::rec",
                         "score": [
-                            {
-                                "player_id": 1,
-                                "gols_num": 10,
-                                "against": 0
-                            }
                         ]
                     },
                     {
@@ -419,11 +529,6 @@
                         },
                         "rec_url": "http::rec",
                         "score": [
-                            {
-                                "player_id": 1,
-                                "gols_num": 10,
-                                "against": 0
-                            }
                         ]
                     }
                 ]
@@ -444,11 +549,6 @@
                         },
                         "rec_url": "http::rec",
                         "score": [
-                            {
-                                "player_id": 1,
-                                "gols_num": 10,
-                                "against": 0
-                            }
                         ]
                     },
                     {
@@ -462,11 +562,6 @@
                         },
                         "rec_url": "http::rec",
                         "score": [
-                            {
-                                "player_id": 1,
-                                "gols_num": 10,
-                                "against": 0
-                            }
                         ]
                     }
                 ]

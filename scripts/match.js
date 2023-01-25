@@ -21,14 +21,16 @@ export default class Match {
             name: team2.name,
             logo: team2.logo
         };
-        this.rec_url = match.rec_url
+        this.rec_url = match.rec_url;
+        this.score = match.score;
     }
 
     get() {
         return {
             team_1: this.team1,
             team_2: this.team2,
-            rec_url: this.rec_url
+            rec_url: this.rec_url,
+            score: this.score
         }
     }
 }

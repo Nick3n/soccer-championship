@@ -136,9 +136,7 @@ import { loadStorageExec } from './loadStorageExec.js';
                 qualifierHtml += matchesHtml;
                 qualifiersHtml += qualifierHtml + '</div>';
             })
-
-            console.log(qualifiersHtml);
-
+            
             return qualifiersHtml;
         }
         
