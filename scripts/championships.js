@@ -1,10 +1,9 @@
+import { loadStorageExec } from './loadStorageExec.js';
 import Season from './season.js';
 import Storage from './storage.js';
 
 (async () => {
-    const storage = new Storage();
-    await storage.saveFile("season1");
-    await storage.saveFile("teams");
+   await loadStorageExec();
     
     class ChampionshipsPage {
         showSeasons() {

@@ -1,10 +1,9 @@
+import { loadStorageExec } from "./loadStorageExec.js";
 import Storage from "./storage.js";
 import teamsChampionship from "./teamsChampionship.js";
 
 (async () => {
-    const storage = new Storage();
-    await storage.saveFile("season1");
-    await storage.saveFile("teams");
+   await loadStorageExec();
 
     class TeamsPage {
         constructor() {
@@ -13,7 +12,6 @@ import teamsChampionship from "./teamsChampionship.js";
             const championshipId = Storage.get("championship-id");
             const teamsIn = new teamsChampionship(championshipId);
             const teams = teamsIn.teams;
-            console.log(teams);
             teams.forEach(team => {
                 let teamBox = this.makeTeamBox(team);
                 grid.innerHTML += teamBox;

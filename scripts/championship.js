@@ -4,11 +4,10 @@ import Rounds from './rounds.js';
 import TableGroup from './tableGroup.js';
 import TableNormal from './tableNormal.js';
 import Qualifiers from './qualifiers.js';
+import { loadStorageExec } from './loadStorageExec.js';
 
 (async () => {
-    const storage = new Storage();
-    await storage.saveFile("season1");
-    await storage.saveFile("teams");
+   await loadStorageExec();
     
     class ChampionshipPage {
         constructor() {
