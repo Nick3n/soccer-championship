@@ -307,11 +307,11 @@
                     {
                         "team_1": {
                             "id": 1,
-                            "score": 0
+                            "score": 17
                         },
                         "team_2": {
                             "id": 3,
-                            "score": 0
+                            "score": 23
                         },
                         "rec_url": "http::rec",
                         "score": [
