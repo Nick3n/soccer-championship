@@ -508,27 +508,75 @@
                     {
                         "team_1": {
                             "id": 1,
-                            "score": -1
+                            "score": 8
                         },
                         "team_2": {
                             "id": 2,
-                            "score": -1
+                            "score": 23
                         },
                         "rec_url": "http::rec",
                         "score": [
+                            {
+                                "player_id": 2,
+                                "goals_num": 13,
+                                "against": 0,
+                                "assists": 4
+                            },
+                            {
+                                "player_id": 20,
+                                "goals_num": 9,
+                                "against": 0,
+                                "assists": 4
+                            },
+                            {
+                                "player_id": 7,
+                                "goals_num": 2,
+                                "against": 0,
+                                "assists": 0
+                            },
+                            {
+                                "player_id": 5,
+                                "goals_num": 1,
+                                "against": 1,
+                                "assists": 0
+                            }
                         ]
                     },
                     {
                         "team_1": {
                             "id": 3,
-                            "score": -1
+                            "score": 21
                         },
                         "team_2": {
                             "id": 4,
-                            "score": -1
+                            "score": 16
                         },
                         "rec_url": "http::rec",
                         "score": [
+                            {
+                                "player_id": 24,
+                                "goals_num": 13,
+                                "against": 1,
+                                "assists": 1
+                            },
+                            {
+                                "player_id": 25,
+                                "goals_num": 7,
+                                "against": 2,
+                                "assists": 3
+                            },
+                            {
+                                "player_id": 8,
+                                "goals_num": 9,
+                                "against": 1,
+                                "assists": 1
+                            },
+                            {
+                                "player_id": 23,
+                                "goals_num": 4,
+                                "against": 0,
+                                "assists": 2
+                            }
                         ]
                     }
                 ]
@@ -541,24 +589,48 @@
                     {
                         "team_1": {
                             "id": 5,
-                            "score": -1
+                            "score": 16
                         },
                         "team_2": {
                             "id": 6,
-                            "score": -1
+                            "score": 13
                         },
                         "rec_url": "http::rec",
                         "score": [
+                            {
+                                "player_id": 3,
+                                "goals_num": 9,
+                                "against": 2,
+                                "assists": 2
+                            },
+                            {
+                                "player_id": 9,
+                                "goals_num": 4,
+                                "against": 1,
+                                "assists": 2
+                            },
+                            {
+                                "player_id": 21,
+                                "goals_num": 3,
+                                "against": 1,
+                                "assists": 1
+                            },
+                            {
+                                "player_id": 11,
+                                "goals_num": 7,
+                                "against": 2,
+                                "assists": 1
+                            }
                         ]
                     },
                     {
                         "team_1": {
                             "id": 7,
-                            "score": -1
+                            "score": 5
                         },
                         "team_2": {
                             "id": 8,
-                            "score": -1
+                            "score": 0
                         },
                         "rec_url": "http::rec",
                         "score": [
